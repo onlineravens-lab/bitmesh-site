@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Bitmesh</title>
+<meta name="description" content="Bitmesh Privacy Policy. the developer collects no data from Bitmesh users.">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" style="color:var(--accent)">
+        <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+        <circle cx="32" cy="32" r="19" fill="none" stroke="currentColor" stroke-width="2" opacity="0.6"/>
+        <circle cx="32" cy="32" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="32" cy="32" r="3.5" fill="currentColor"/>
+      </svg>
+      <span>Bitmesh</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="label">Bitmesh: Offline Chat</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective 25 October 2026</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>the developer collects <strong>no data</strong> from you.</li>
+    <li>We run no servers that receive your messages.</li>
+    <li>No accounts, no analytics, no advertising, no tracking, no crash reporting SDKs.</li>
+    <li>We do not sell or share personal data.</li>
+    <li>Everything Bitmesh stores stays on your device. You can erase it any time.</li>
+  </ul>
+  <p>"Bitmesh" is the app. "I", "we" and "us" mean Naren Muthukumaran, the independent developer and publisher of Bitmesh. Contact: <a href="mailto:onlineravens@gmail.com">onlineravens@gmail.com</a>.</p>
+
+  <h2>Your identity on the device</h2>
+  <ul>
+    <li>You do not sign up. No account, phone number or email is needed.</li>
+    <li>Bitmesh creates a random cryptographic identity (a set of keys) on your device. It is stored in the iOS Keychain.</li>
+    <li>The display name you choose is shared with people nearby and in rooms.</li>
+  </ul>
+
+  <h2>How your messages travel</h2>
+  <h3>Private chats and Crews</h3>
+  <ul>
+    <li>They are end-to-end encrypted using the Noise protocol.</li>
+    <li>Only the people in the chat can read them.</li>
+    <li>Crews are small private groups of up to 16 people.</li>
+  </ul>
+  <h3>Public rooms</h3>
+  <ul>
+    <li><strong>Everyone nearby</strong> uses Bluetooth. It is not encrypted. Anyone in range can read it.</li>
+    <li><strong>Area rooms</strong> (this venue, this area, this city) travel over the internet through public Nostr relays run by third parties.</li>
+    <li>Area rooms reveal only an approximate area (a coarse location cell). They never reveal your exact location.</li>
+    <li>Messages in public rooms are public. Third-party relays may store them. the developer cannot control or recall them.</li>
+  </ul>
+  <h3>Internet delivery of private messages</h3>
+  <ul>
+    <li>When two people trust each other (they scan each other's QR code in person), private messages can travel as encrypted envelopes through third-party Nostr relays.</li>
+    <li>Relays can see that an encrypted envelope exists and the IP address that connected. They cannot read the content.</li>
+    <li>The optional <strong>Extra privacy online</strong> setting sends internet traffic through Tor to hide your IP address from relays. It is off by default.</li>
+  </ul>
+  <h3>Phones that relay for you</h3>
+  <ul>
+    <li>Phones nearby pass encrypted messages along. They cannot read them.</li>
+    <li>Bitmesh may keep relaying in the background, as iOS allows.</li>
+  </ul>
+
+  <h2>Permissions we ask for</h2>
+  <ul>
+    <li><strong>Bluetooth:</strong> to find nearby phones and pass messages along.</li>
+    <li><strong>Location (When In Use only):</strong> used only when you open area rooms. The area cell is computed on your device. Exact coordinates are never sent.</li>
+    <li><strong>Camera:</strong> only to scan a friend's QR code and to take photos you choose to send.</li>
+    <li><strong>Microphone:</strong> only while you hold to record a voice note.</li>
+    <li><strong>Photos:</strong> only the photos you pick.</li>
+    <li><strong>Notifications:</strong> generated on your device. Message text is hidden on the lock screen by default.</li>
+  </ul>
+
+  <h2>What is stored on your device</h2>
+  <ul>
+    <li>Messages are kept in memory. They clear when the app fully closes.</li>
+    <li>Undelivered private messages wait in an encrypted outbox for up to 24 hours.</li>
+    <li>Received photos and voice notes are stored on your device with iOS data protection. They expire automatically.</li>
+    <li>Your keys are in the iOS Keychain.</li>
+  </ul>
+
+  <h2>The one file we host</h2>
+  <p>Bitmesh fetches one public file from this website: <code>moderation/blocklist.json</code>. It is used to hide people confirmed as abusive.</p>
+  <ul>
+    <li>The request contains no personal data.</li>
+    <li>It reveals your IP address to GitHub Pages, which hosts this site. GitHub's own privacy policy applies.</li>
+    <li>the developer does not receive or log this request.</li>
+  </ul>
+
+  <h2>Data we collect</h2>
+  <p>None. the developer has no analytics, no advertising, no tracking, no crash reporting SDKs and no accounts. We do not sell or share personal data, because we do not have any.</p>
+
+  <h2>Third parties</h2>
+  <ul>
+    <li><strong>Nostr relays:</strong> public servers run by others. Their rules are their own.</li>
+    <li><strong>Tor:</strong> only if you turn on Extra privacy online.</li>
+    <li><strong>GitHub Pages:</strong> hosts this website and the block list file.</li>
+    <li><strong>Apple:</strong> the App Store and iOS handle downloads and system services under Apple's own policies.</li>
+  </ul>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li>the developer holds no data about you, so there is nothing to delete on our side.</li>
+    <li>To erase everything on your device, go to the You tab and hold <strong>Wipe everything</strong> for 3 seconds. It erases your identity, keys, messages, trusted people and settings.</li>
+    <li>Deleting the app also removes local data.</li>
+    <li>Messages you already posted to public rooms may sit on third-party relays. the developer cannot recall them.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Bitmesh is not directed to children under 13. It is intended for people aged 13 or older, or the minimum age in their country, whichever is higher. Parents should not let younger children use it. Bitmesh has user-generated content and public rooms.</p>
+
+  <h2>Your rights</h2>
+  <p>Laws such as the GDPR, the UK GDPR and the CCPA give people rights over their personal data, such as access, correction and deletion. Because the developer does not collect personal data, there is usually nothing for us to give, fix or delete. You can still send any request to <a href="mailto:onlineravens@gmail.com">onlineravens@gmail.com</a>. We will answer it.</p>
+
+  <h2>Security</h2>
+  <p>Keys live in the iOS Keychain. Private chats use end-to-end encryption. No system is perfectly secure, and public rooms are never private.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change this policy, we will post the new version here with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions or requests: <a href="mailto:onlineravens@gmail.com">onlineravens@gmail.com</a>.</p>
+
+  <p class="meta">Bitmesh is compatible with the open Bitchat protocol. It is an independent app by Naren Muthukumaran, not affiliated with or endorsed by Bitchat or its authors.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Naren Muthukumaran</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
