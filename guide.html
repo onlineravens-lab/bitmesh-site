@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to use Bitmesh | Guide</title>
+<meta name="description" content="A simple step by step guide to Bitmesh: set up in 30 seconds, chat with people nearby without signal, start a Crew, join rooms, read the ticks and stay safe.">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .guide-wrap { max-width: 920px; }
+  .toc { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; padding: 0; list-style: none; margin: 24px 0 8px; }
+  .toc li { margin: 0; }
+  .toc a { display: flex; gap: 10px; align-items: center; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; color: var(--text); font-weight: 600; font-size: .95rem; }
+  .toc a:hover { border-color: var(--accent); }
+  .toc b { font-family: ui-monospace, "SF Mono", Menlo, monospace; color: var(--accent); font-size: .8rem; }
+  .step { display: grid; grid-template-columns: 1fr 250px; gap: 36px; align-items: start; padding: 44px 0; border-top: 1px solid var(--line); }
+  .step:first-of-type { border-top: 0; }
+  .step .num { font-family: ui-monospace, "SF Mono", Menlo, monospace; color: var(--accent); letter-spacing: .2em; font-size: .78rem; font-weight: 700; text-transform: uppercase; }
+  .step h2 { margin-top: 6px; }
+  .step ol, .step ul { padding-left: 1.2em; }
+  .step li { margin: .35em 0; }
+  .shot { position: sticky; top: 24px; }
+  .shot img { width: 100%; height: auto; border-radius: 34px; border: 6px solid #1b2127; box-shadow: 0 24px 60px rgba(0,0,0,.35), 0 0 0 1px var(--line); display: block; background: #000; }
+  .shot figcaption { font-size: .8rem; color: var(--muted); text-align: center; margin-top: 10px; }
+  .tip { border-left: 3px solid var(--accent); padding: 10px 14px; margin: 16px 0 0; background: color-mix(in srgb, var(--accent) 8%, transparent); border-radius: 0 10px 10px 0; font-size: .95rem; }
+  .ticks { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: .95rem; }
+  .ticks td { padding: 10px 8px; border-top: 1px solid var(--line); vertical-align: top; }
+  .ticks td:first-child { white-space: nowrap; width: 96px; color: var(--accent); }
+  .ticks svg { width: 18px; height: 18px; vertical-align: -4px; stroke: currentColor; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .ticks .bad { color: #e5484d; }
+  kbd { font-family: inherit; font-weight: 600; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 0 6px; font-size: .9em; white-space: nowrap; }
+  @media (max-width: 720px) {
+    .step { grid-template-columns: 1fr; gap: 20px; padding: 32px 0; }
+    .shot { position: static; max-width: 260px; margin: 0 auto; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap guide-wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" style="color:var(--accent)">
+        <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+        <circle cx="32" cy="32" r="19" fill="none" stroke="currentColor" stroke-width="2" opacity="0.6"/>
+        <circle cx="32" cy="32" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="32" cy="32" r="3.5" fill="currentColor"/>
+      </svg>
+      <span>Bitmesh</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guide.html" aria-current="page">Guide</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap guide-wrap">
+  <p class="label">Guide</p>
+  <h1>How to use Bitmesh</h1>
+  <p class="lede">Bitmesh lets you message people around you when there is no signal. Phones pass messages to each other over Bluetooth, and use the internet too when it is there. Here is everything you need, in nine short steps.</p>
+
+  <div class="tip"><strong>The one thing to know:</strong> Bitmesh works best when the people you want to reach have it too. Every extra phone nearby makes the network stronger, so share the app with your group before you go.</div>
+
+  <ol class="toc">
+    <li><a href="#setup"><b>01</b> Set up</a></li>
+    <li><a href="#nearby"><b>02</b> See who is nearby</a></li>
+    <li><a href="#chat"><b>03</b> Chat one to one</a></li>
+    <li><a href="#ticks"><b>04</b> Read the ticks</a></li>
+    <li><a href="#crews"><b>05</b> Start a Crew</a></li>
+    <li><a href="#trust"><b>06</b> Trust a friend</a></li>
+    <li><a href="#rooms"><b>07</b> Join a room</a></li>
+    <li><a href="#lantern"><b>08</b> Lantern mode</a></li>
+    <li><a href="#safety"><b>09</b> Stay safe</a></li>
+  </ol>
+
+  <section class="step" id="setup">
+    <div>
+      <p class="num">Step 01</p>
+      <h2>Set up in 30 seconds</h2>
+      <p>There is no account, no phone number and no email.</p>
+      <ol>
+        <li>Open Bitmesh and tap <kbd>Get started</kbd>.</li>
+        <li>Type the name you want people to see. You can change it later.</li>
+        <li>Tap <kbd>Turn on Bluetooth</kbd> and allow it. This is how phones find each other.</li>
+        <li>Allow notifications if you want a nudge when someone writes. Message text stays hidden on your lock screen by default.</li>
+        <li>Tap <kbd>Start chatting</kbd>.</li>
+      </ol>
+      <p class="tip">Your identity lives only on your iPhone. If you delete the app, it is gone for good.</p>
+    </div>
+    <figure class="shot"><img src="img/guide/00-welcome.jpg" alt="Bitmesh welcome screen with a glowing signal ring and the words Talk with no signal" loading="lazy"><figcaption>The welcome screen</figcaption></figure>
+  </section>
+
+  <section class="step" id="nearby">
+    <div>
+      <p class="num">Step 02</p>
+      <h2>See who is nearby</h2>
+      <p>Open the <strong>Nearby</strong> tab. The ring shows the network around you.</p>
+      <ul>
+        <li>Each dot is a person in range. Glowing dots are people you trust.</li>
+        <li><strong>Signal</strong> goes from Quiet to Weak, Good and Strong as more people join.</li>
+        <li><strong>Right here</strong> means their phone is directly connected to yours. <strong>In range through others</strong> means messages hop through other phones to reach them.</li>
+        <li>Tap the green message button next to anyone to start a chat.</li>
+      </ul>
+      <p class="tip">Bluetooth reaches about 10 to 100 metres per phone. In a crowd, messages hop from phone to phone, so they travel much further.</p>
+    </div>
+    <figure class="shot"><img src="img/guide/03-nearby.jpg" alt="Nearby tab showing a signal ring with 9 people in range and a list of people" loading="lazy"><figcaption>Nearby: who is in range</figcaption></figure>
+  </section>
+
+  <section class="step" id="chat">
+    <div>
+      <p class="num">Step 03</p>
+      <h2>Chat one to one</h2>
+      <ol>
+        <li>On the <strong>Chats</strong> tab, tap the pencil icon, then <kbd>New chat</kbd>.</li>
+        <li>Pick someone in range, or a trusted friend.</li>
+        <li>Type and tap the arrow to send.</li>
+      </ol>
+      <ul>
+        <li><strong>Photo:</strong> tap <kbd>+</kbd> and choose your library or the camera.</li>
+        <li><strong>Voice note:</strong> hold the microphone, speak, then let go to send. Slide left to cancel.</li>
+        <li><strong>More options:</strong> press and hold any message to copy it, see how it travelled, try again, report, block or delete it.</li>
+      </ul>
+      <p>Private chats are end-to-end encrypted. Only the two of you can read them.</p>
+    </div>
+    <figure class="shot"><img src="img/guide/01-chats.jpg" alt="Chats tab listing a Crew and three private chats with delivery ticks" loading="lazy"><figcaption>Chats: Crews on top, then people</figcaption></figure>
+  </section>
+
+  <section class="step" id="ticks">
+    <div>
+      <p class="num">Step 04</p>
+      <h2>Read the ticks</h2>
+      <p>Under each message you send, a small symbol tells you exactly where it is.</p>
+      <table class="ticks">
+        <tr><td><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg> Waiting</td><td>No one can carry it yet. Bitmesh keeps trying for 24 hours.</td></tr>
+        <tr><td><svg viewBox="0 0 24 24"><path d="M4 12.5l4 4 8-9"/></svg><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.5"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7"/></svg> Sent nearby</td><td>Sent phone to phone over Bluetooth.</td></tr>
+        <tr><td><svg viewBox="0 0 24 24"><path d="M4 12.5l4 4 8-9"/></svg><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c3 3 3 13 0 16M12 4c-3 3-3 13 0 16"/></svg> Sent online</td><td>Sent over the internet.</td></tr>
+        <tr><td><svg viewBox="0 0 24 24"><path d="M4 12.5l4 4 8-9"/></svg><svg viewBox="0 0 24 24"><circle cx="13" cy="5" r="1.6"/><path d="M10 20l2-6 3 3v3M12 14l1-5 3 3h3"/></svg> Travelling</td><td>A nearby phone is carrying it and will hand it over when it meets them.</td></tr>
+        <tr><td><svg viewBox="0 0 24 24"><path d="M2 12.5l4 4 8-9M10 16.5l8-9"/></svg> Delivered</td><td>It reached their phone.</td></tr>
+        <tr><td><svg viewBox="0 0 24 24" style="stroke-width:3"><path d="M2 12.5l4 4 8-9M10 16.5l8-9"/></svg> Read</td><td>They opened it.</td></tr>
+        <tr><td class="bad"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v5M12 16v.5"/></svg> Not sent</td><td>It gave up after 24 hours or 8 tries. Press and hold it and tap <kbd>Try again</kbd>.</td></tr>
+      </table>
+      <p class="tip">Press and hold one of your messages and tap <kbd>Info</kbd> to see this explained inside the app.</p>
+    </div>
+    <figure class="shot"><img src="img/guide/02-crew.jpg" alt="A Crew conversation with sent and read ticks under messages" loading="lazy"><figcaption>Ticks under your messages</figcaption></figure>
+  </section>
+
+  <section class="step" id="crews">
+    <div>
+      <p class="num">Step 05</p>
+      <h2>Start a Crew</h2>
+      <p>A Crew is a private group for your friends or your team, up to 16 people.</p>
+      <ol>
+        <li>Stand close to your friends with Bitmesh open on every phone.</li>
+        <li>On <strong>Chats</strong>, tap the pencil icon, then <kbd>New Crew</kbd>.</li>
+        <li>Give it a name, tick the people you want, and tap <kbd>Create</kbd>.</li>
+      </ol>
+      <ul>
+        <li><strong>Add people later:</strong> open the Crew, tap the people icon at the top right, then tap anyone under <em>Add people nearby</em>.</li>
+        <li>Only the person who started the Crew can add or remove people.</li>
+        <li><strong>Leave:</strong> swipe left on the Crew in your chat list, or use the details screen.</li>
+      </ul>
+      <p class="tip">Adding someone needs them close by, because the Crew's secret key is handed over phone to phone.</p>
+    </div>
+    <figure class="shot"><img src="img/guide/02-crew.jpg" alt="Crew chat called Main stage gang with five people" loading="lazy"><figcaption>A Crew of five</figcaption></figure>
+  </section>
+
+  <section class="step" id="trust">
+    <div>
+      <p class="num">Step 06</p>
+      <h2>Trust a friend</h2>
+      <p>Trusting someone means messages can reach them over the internet too, even when you are far apart. You also know it is really them.</p>
+      <ol>
+        <li>Meet up and open <strong>You</strong>, then tap <kbd>My code and scan</kbd> on both phones.</li>
+        <li>One person shows <strong>My code</strong>. The other taps <strong>Scan</strong> and points the camera at it.</li>
+        <li>Swap and do it the other way round.</li>
+      </ol>
+      <p>A green seal appears next to their name once you trust each other. See everyone you trust in <strong>You › Trusted people</strong>.</p>
+    </div>
+    <figure class="shot"><img src="img/guide/05-trust.jpg" alt="Trust in person screen showing a QR code to scan" loading="lazy"><figcaption>Scan each other's code</figcaption></figure>
+  </section>
+
+  <section class="step" id="rooms">
+    <div>
+      <p class="num">Step 07</p>
+      <h2>Join a room</h2>
+      <p>Rooms are public conversations. Open the <strong>Rooms</strong> tab.</p>
+      <ul>
+        <li><strong>Everyone nearby</strong> reaches everyone with Bitmesh or Bitchat in Bluetooth range. No internet needed.</li>
+        <li>Tap <kbd>Use my location</kbd> to see rooms for <strong>this venue, this area, this city</strong> and wider. These use the internet. Only the rough area is used, never your exact location.</li>
+        <li>The first time, you will see the community rules. Tap <kbd>I agree</kbd> to join.</li>
+        <li>Save a room you like from its details screen so it stays in your list.</li>
+      </ul>
+      <p class="tip">Rooms are public, like talking out loud. Do not share passwords, money details or exactly where you are.</p>
+    </div>
+    <figure class="shot"><img src="img/guide/04-rooms.jpg" alt="Rooms tab with Everyone nearby and rooms for this venue, area, city, region and country" loading="lazy"><figcaption>Rooms for where you are</figcaption></figure>
+  </section>
+
+  <section class="step" id="lantern">
+    <div>
+      <p class="num">Step 08</p>
+      <h2>Use Lantern mode at busy events</h2>
+      <p>iPhones limit Bluetooth when an app is in the background or the phone is locked. Lantern mode keeps Bitmesh working at full strength.</p>
+      <ol>
+        <li>Open <strong>Nearby</strong>, scroll down and tap <kbd>Lantern mode</kbd>.</li>
+        <li>The screen dims and stays awake. Put your phone in your pocket.</li>
+        <li>Your phone now passes messages along for everyone around you. Tap <kbd>Done</kbd> to stop.</li>
+      </ol>
+      <p class="tip">If a few people in your group turn on Lantern mode, the whole group gets faster delivery.</p>
+    </div>
+    <figure class="shot"><img src="img/guide/08-lantern.jpg" alt="Lantern mode: a dark screen with a glowing ring helping 9 people nearby" loading="lazy"><figcaption>Lantern mode</figcaption></figure>
+  </section>
+
+  <section class="step" id="safety">
+    <div>
+      <p class="num">Step 09</p>
+      <h2>Stay safe and private</h2>
+      <ul>
+        <li><strong>Report:</strong> press and hold any message and tap <kbd>Report</kbd>. Reports are read within 24 hours, and confirmed abusers are hidden for everyone using Bitmesh.</li>
+        <li><strong>Block:</strong> press and hold a message and tap <kbd>Block</kbd>. Unblock anytime in <strong>You › Blocked</strong>.</li>
+        <li><strong>Hide offensive words:</strong> on by default. Hidden messages show only when you tap them.</li>
+        <li><strong>App Lock:</strong> <strong>You › App Lock</strong> asks for Face ID when you open Bitmesh.</li>
+        <li><strong>Extra privacy online:</strong> sends internet traffic through Tor so relays cannot see your IP address. Slower to connect.</li>
+        <li><strong>Wipe everything:</strong> at the bottom of <strong>You</strong>, hold the button for 3 seconds. Your identity, messages, trusted people and settings are erased from this iPhone.</li>
+      </ul>
+      <p class="tip">Do not rely on Bitmesh in an emergency. Always call emergency services when you can.</p>
+    </div>
+    <figure class="shot"><img src="img/guide/06-you.jpg" alt="You tab with profile, trusted people, blocked people and privacy settings" loading="lazy"><figcaption>You: privacy and safety</figcaption></figure>
+  </section>
+
+  <section style="border-top:1px solid var(--line);padding:44px 0 8px">
+    <h2>Good to know</h2>
+    <ul>
+      <li>Messages arrive fastest with Bitmesh open. When your phone is locked, delivery can be slower.</li>
+      <li>Messages are kept in memory and clear when the app fully closes. Nothing is stored on a server.</li>
+      <li>Messages that cannot be delivered wait for up to 24 hours and send automatically when someone comes in range.</li>
+      <li>Bitmesh speaks the open Bitchat protocol, so you can also talk to people using Bitchat.</li>
+    </ul>
+    <h2>Something not working?</h2>
+    <ul>
+      <li><strong>No one nearby:</strong> check Bluetooth is on, keep Bitmesh open on both phones and move a little closer.</li>
+      <li><strong>Stuck on the clock:</strong> no one can carry it yet. It sends by itself when someone comes in range, or online if you trust each other.</li>
+      <li><strong>Rooms are empty:</strong> area rooms need internet and location. Everyone nearby works without either.</li>
+      <li><strong>Cannot add someone to a Crew:</strong> stand close with the app open on both phones and try again.</li>
+    </ul>
+    <p>Still stuck? See <a href="support.html">Support</a> or email <a href="mailto:onlineravens@gmail.com">onlineravens@gmail.com</a>.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap guide-wrap">
+    <span>&copy; 2026 Naren Muthukumaran</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html">Guide</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
